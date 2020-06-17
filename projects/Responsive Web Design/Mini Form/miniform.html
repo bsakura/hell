@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Mini Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center"> Eyo Mini FORM </h1>
+    <p id="description"> Let's have a second to fill this out, shall we?</p>
+    </header>
+    <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label><br>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label><br>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      ><br>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="What's your Age"
+      />
+      
+    </div>
+    
+    <div class="form-group">
+      <p> Your cigarette of choice </p>
+      <select id="dropdown" name="role" class="form-control" required> 
+         <option disabled selected value>Select your taste</option>
+        <option value="white">White Cigarette</option>
+        <option value="kretek">Kretek</option>
+        <option value="mint">Menthol Burst</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+      <div class="form-group">
+        <p> Your gender</p>
+        <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Other</label>
+      </div>
+
+      <div class="form-group">
+        <p> What Vehicle do you use </p>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Horse">
+          <label for="vehicle1"> Horse</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+          <label for="vehicle2"> Car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+          <label for="vehicle3"> Boat</label><br>
+      </div>
+      
+      <div class="form-group">
+        <p> Got more to tell? </p>
+        <textarea
+             class="input-textarea"
+             id= "comments"
+             name="comment"
+             placeholder="Say it here..."/
+            >
+        </textarea>
+          </div>
+        
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
